@@ -1,0 +1,13 @@
+﻿# MATLAB
+*.asv
+*.asv~
+
+# Data
+*.set
+*.fdt
+
+# Toolboxes
+code/toolboxes/
+
+# Collab
+sharing/
