@@ -36,11 +36,12 @@ opt.user_id = opt.user_id(1:end-1);
 % Specify local paths
 switch opt.user_id
     % Julia's paths
-    case 'ahjr-radams-lt\julia'      
+    case 'ahjr-radams-lt\julia'
+        opt.pmain         = 'D:/NAPLS2_FASTER/';
         opt.pcode         = 'C:/Users/Julia/Documents/NAPLS/napls_ei/code/';
-        opt.pdata         = 'D:/NAPLS2_FASTER/MMN_preprocessed_Hamilton/NAPLS2-MMN-baseline-ERPfiles/';
-        opt.presults      = 'D:/NAPLS2_FASTER/MMN_preprocessed_Hamilton/polished/';
-        opt.fsubjects     = 'D:/NAPLS2_FASTER/NAPLS-2 MMN FINAL DATABASE March 2022_JRS.xlsx';
+        opt.pdata         = fullfile(opt.pmain, 'MMN_preprocessed_Hamilton', 'NAPLS2-MMN-baseline-ERPfiles');
+        opt.presults      = fullfile(opt.pmain, 'MMN_preprocessed_Hamilton', 'polished');
+        opt.fsubjects     = fullfile(opt.pmain, 'Demographics', 'NAPLS-2 MMN FINAL DATABASE March 2022_JRS.xlsx');
     otherwise
         error('Undefined user! Please specify a user in the "Specify user-specific paths" section and provide the relevant paths.');
 end
@@ -67,7 +68,7 @@ setup_paths
 
 if opt.demographics
     % Demographics across MMN and P300 - Table 1
-    napls2_demographics_tbl1;
+    napls2_demographics_tbl1(opt);
     
     % Demographics for the MMN task - Table S1
     napls2_demographics_suppl(opt);
@@ -85,13 +86,15 @@ if opt.grand_average
     napls2_average_mmn(opt);
 end
 
-%% Fit grand mean to get empirical priors
+%% Fit grand mean data
+% napls2_mmn_fit_dcm_to_grandmean uses hardcoded paths (see function)
 
 if opt.fit_mean
-    napls2_mmn_fit_dcm_to_grandmean;
+    napls2_mmn_fit_dcm_to_grandmean(1);
 end
 
 %% Fit individual subjects
+% Note: napls2_mmn_fit_dcm_to_individuals uses hardcoded paths (see function)
 
 if opt.fit_individuals
     % Get SPM files

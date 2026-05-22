@@ -24,5 +24,5 @@ spm_get_defaults('stats.maxmem', 2^31); % 2 GB RAM
 % spm_get_defaults('stats.resmem', true); % store GLM temp files in memory, not on disk
 
 % Set to true for cluster job where no graphics can be output
-% spm_get_defaults('cmdline', false);
-spm_get_defaults('cmdline', true);
+spm_get_defaults('cmdline', false);
+% spm_get_defaults('cmdline', true);
