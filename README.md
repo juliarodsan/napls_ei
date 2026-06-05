@@ -1,11 +1,11 @@
 # Biophysical modeling of excitation/inhibition balance and conversion to psychosis in the clinical high risk syndrome
 
-This repository contains the analysis code for Rodriguez-Sanchez*, Hauke* et al. (2026, *Biological Psychiatry*). We use dynamic causal modelling (DCM) to estimate excitatory and inhibitory cell function from MMN and P300 EEG data in the NAPLS2 cohort and parametric empirical Bayes (PEB) to identify differences between CHR-P individuals who later convert to psychosis and those who remit.
+This repository contains the analysis code for Rodriguez-Sanchez*, Hauke* et al. (2026, *Biological Psychiatry*). We use dynamic causal modelling (DCM) to estimate excitatory and inhibitory cell function from MMN and P300 EEG data in the NAPLS2 cohort and parametric empirical Bayes (PEB) to identify differences between CHR-P individuals who later convert to psychosis and those who remit, as well as associations with symptoms.
 
 ## Citing this work
 
 If you use this code, please cite:
-* Rodriguez-Sanchez\*, Hauke\* et al. (2026). Biophysical modeling of excitation/inhibition balance and conversion to psychosis in the clinical high risk syndrome. *Biological Psychiatry*. https://doi.org/10.1016/j.biopsych.2026.04.015
+* Rodriguez-Sanchez\*, Hauke\* et al. (2026). Biophysical modeling of excitation/inhibition balance and conversion to psychosis in the clinical high risk syndrome. *Biological Psychiatry*. https://doi.org/10.1016/j.biopsych.2026.04.007
 
 This code uses the canonical microcircuit model from:
 * Hauke et al. (2025). A canonical microcircuit for estimating excitation/inhibition (E/I) balance. *bioRxiv*. https://doi.org/10.1101/2025.07.10.664116
