@@ -7,10 +7,9 @@ This repository contains the analysis code for Rodriguez-Sanchez*, Hauke* et al.
 If you use this code, please cite:
 * Rodriguez-Sanchez\*, Hauke\* et al. (2026). Biophysical modeling of excitation/inhibition balance and conversion to psychosis in the clinical high risk syndrome. *Biological Psychiatry*. https://doi.org/10.1016/j.biopsych.2026.04.007
 
-This code uses the canonical microcircuit model from:
-* Hauke et al. (2025). A canonical microcircuit for estimating excitation/inhibition (E/I) balance. *Translational Psychiatry*. https://doi.org/10.1038/s41398-026-04312-y
+* Hauke et al. (2026). A canonical microcircuit for estimating excitation/inhibition (E/I) balance. *Translational Psychiatry*. https://doi.org/10.1038/s41398-026-04312-y
 
-The model implementation is available at: https://github.com/daniel-hauke/dcm_ei
+The canonical microcircuit model implementation from Hauke et al. (2026) is available at: https://github.com/daniel-hauke/dcm_ei
 
 This code runs in MATLAB and requires the SPM12 toolbox. Please also cite SPM12 if you use this code:
 
